@@ -22,7 +22,7 @@ resource "google_compute_instance" "default" {
     tags = ["http-server", "https-server"]
     
    service_account {
-    email = "terraform-access@anil-t948144-273620.iam.gserviceaccount.com"
+    email = "<ADD YOUR SERVICE ACCOUNT>"
     scopes = [
        "https://www.googleapis.com/auth/compute",
        "https://www.googleapis.com/auth/logging.write",
