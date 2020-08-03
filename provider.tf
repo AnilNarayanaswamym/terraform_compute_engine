@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = file("compute_engine_sa_keys.json")
+  credentials = file("ADD_SA_CREDENTIALS.json")
   project     = "<ADD_PROJECT_ID>"
   region      = "us-central1"
 }
