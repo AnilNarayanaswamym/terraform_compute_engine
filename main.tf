@@ -33,12 +33,6 @@ resource "google_compute_instance" "default" {
 ]
   }
  }
-
-  // Allow traffic from everywhere to instances with an http-server & https tag
-  source_ranges = ["0.0.0.0/0"]
-  target_tags   = ["http-server", "https-server"]
-}
-
 output "ip" {
   value = "${google_compute_instance.default.network_interface.0.access_config.0.nat_ip}"
 }
