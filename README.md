@@ -1,6 +1,6 @@
 # terraform_compute_engine
 
-Deploy Virtual machine on Google Cloud Plataform (GCP).
+Deploy Compute Engine VM
 
 This project requires:
 
